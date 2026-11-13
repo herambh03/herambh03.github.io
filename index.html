@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Herambh Dakshinamoorthy | Automotive Design Engineer</title>
+<meta name="description" content="Automotive engineer working on chassis structures, vehicle dynamics and powertrains. IIT (ISM) Dhanbad. Bengaluru.">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script></head>
+<body class="nogl">
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="scan" aria-hidden="true"></div>
+<header class="hud">
+  <div class="brand"><h1>HD <sup>&copy;</sup> 26&rsquo;</h1>
+  <p class="jp">HERAMBH DAKSHINAMOORTHY</p>
+  <p>AUTOMOTIVE DESIGN ENGINEER<br>CHASSIS / VEHICLE DYNAMICS / POWERTRAINS<br>BENGALURU, IN</p>
+  <div class="keys"><span class="k">W A S D</span><span>DRIVE</span><span class="k">SPACE</span><span>JUMP</span><span class="k">SHIFT</span><span>BOOST</span></div></div>
+  <nav class="pills" aria-label="Sections"><button data-mode="explore" class="on">EXPLORE</button><button data-mode="works">WORKS</button><button data-mode="about">ABOUT</button></nav>
+  <div class="now"><div class="ico">&#9679;</div><div><small>NOW AT</small><b>ATHER ENERGY</b><span>CHASSIS STRUCTURAL ENGINEER</span></div></div>
+</header>
+<div class="speed"><b id="spd">000</b><small>KM/H</small></div>
+<div class="touch" aria-hidden="true"><button id="bl">&#9664;</button><button id="br">&#9654;</button><button id="bj">JUMP</button><button id="bb">BOOST</button></div>
+
+<section class="panel" id="p-works" aria-label="Projects">
+<button class="close" data-mode="explore" aria-label="Close">&times;</button>
+
+<h2>Projects &amp; publication</h2>
+<div class="cards">
+<div class="card"><h3>Lap Time Simulator</h3><p>1-D point-mass simulator with a custom forward-backward optimization. Uses track geometry and FastF1 telemetry to study braking, acceleration, cornering and sensitivity to vehicle parameters.</p><a href="https://colab.research.google.com/drive/1G9wFES3a358soVSJm5xDHJUh2IjQGTF0?usp=sharing">open notebook &rarr;</a></div>
+<div class="card"><h3>Ackermann Optimization from Tire Data</h3><p>Found the best operating Ackermann percentage for a Formula Student steering system using Tire Testing Consortium data in MATLAB. Lets the car take 4 m corners at 30 km/h.</p><a href="https://github.com/herambh03/Tire-Data-Ackermann-Optimization">view repo &rarr;</a></div>
+<div class="card"><h3>Inter-IIT JLR Chiplet Challenge</h3><p>Chiplet-based centralized E/E architecture for connected vehicles, with a master control unit for modular scaling and neuromorphic compute chiplets for AI features.</p><a href="https://github.com/herambh03/JLR-CHIPLET-CHALLENGE/blob/main/JLR_PRESENTATION.pdf">view presentation &rarr;</a></div>
+<div class="card"><h3>Self-Driving Vehicle Control</h3><p>Longitudinal and lateral controllers in Python using PID for trajectory tracking and speed control. Reached 100% waypoint coverage in simulation on CARLA.</p><a href="https://github.com/herambh03/Self-Driving-Car-on-CARLA">view repo &rarr;</a></div>
+<div class="card"><h3>Publication: PINNs for Battery Temperature</h3><p>Estimating battery temperature in dynamic driving conditions using physics-informed neural networks. 2023 IEEE IAS Global Conference on Emerging Technologies (GlobConET).</p><a href="https://ieeexplore.ieee.org/document/10150156">IEEE Xplore &rarr;</a></div>
+</div>
+
+</section>
+<section class="panel" id="p-about" aria-label="About">
+<button class="close" data-mode="explore" aria-label="Close">&times;</button>
+<div id="about">
+<h2>About</h2>
+<p style="max-width:44em;color:#b9c6d3">Mechanical engineer from IIT (ISM) Dhanbad with a flair for physics and mathematics. I work across automotive and electric vehicles, aerodynamics and sustainability, and I want to apply machine learning and deep learning to the automotive industry. Past work spans electric two-wheelers, Formula Student, and race engineering in Spain.</p>
+<div class="stats">
+<div class="stat"><b>18 kg</b><span>Shockwave motorcycle chassis, designed for 20g vertical jump loads</span></div>
+<div class="stat"><b>3</b><span>electric motorcycle platforms taken to manufacturing readiness in 9 months</span></div>
+<div class="stat"><b>25+</b><span>engineers led as Formula Student team captain</span></div>
+<div class="stat"><b>8.64</b><span>GPA, B.Tech Mechanical Engineering</span></div>
+</div>
+</div><div id="experience">
+<h2>Experience</h2>
+<div class="job"><div class="when">May 2026 - Present</div><div><h3>Chassis Structural Engineer</h3><div class="co">Ather Energy, Bengaluru</div></div></div>
+<div class="job"><div class="when">Oct 2025 - May 2026</div><div><h3>Design Engineer</h3><div class="co">Ultraviolette Automotive, Bengaluru</div><ul>
+<li><b>System modelling:</b> built a vehicle-level parametric model that turns product requirements into subsystem targets for powertrain, geometry, chassis, suspension, mechanisms and packaging. Cut concept timelines by 8 weeks.</li>
+<li><b>Shockwave chassis:</b> developed the chassis with load-path tracing and topology optimization to an 18 kg structure that takes 20g vertical jump loads, while meeting DFM, weld access, stiffness and styling constraints.</li></ul></div></div>
+<div class="job"><div class="when">Nov 2024 - Oct 2025</div><div><h3>Project Engineer, Mechanical Systems</h3><div class="co">Ultraviolette Automotive, Bengaluru</div><ul>
+<li>Led NPD and manufacturing readiness for three electric motorcycle platforms (F77 Mach 2, F77 Superstreet, X47 Crossover) in a compressed 9-month cycle.</li>
+<li>Created "Flight Path", an EV-focused product development framework that blends APQP with cross-functional gates across 6 phases, concept to SOP.</li></ul></div></div>
+<div class="job"><div class="when">2025</div><div><h3>Vehicle Dynamics Trainee Engineer</h3><div class="co">RGB Racing, Madrid, Spain</div><ul>
+<li>Tuned tire longitudinal and lateral behavior for the Porsche 992 GT3 from test data.</li>
+<li>Analysed race data in PI Toolbox (speed, throttle, brake pressure, steering) to find driver deltas and shape race strategy.</li>
+<li>Trained in CFD fundamentals, aero element design, wind-tunnel/track correlation and rapid prototyping.</li></ul></div></div>
+<div class="job"><div class="when">2022</div><div><h3>R&amp;D Intern</h3><div class="co">Gensol Electric Vehicles, Pune</div><ul>
+<li>Sized an electric powertrain (80 km/h, 200 km range) in MATLAB/Simulink, trading off thermal limits and efficiency.</li>
+<li>Led a benchmark vehicle teardown and wrote the Scope of Requirements for powertrain, chassis and body-in-white.</li>
+<li>Reverse engineered components and built 3D CAD models with GD&amp;T.</li></ul></div></div>
+<div class="job"><div class="when">2021 - 2024</div><div><h3>Team Captain, Head of EV Powertrain</h3><div class="co">Mechismu Racing, Formula Student, IIT (ISM) Dhanbad</div><ul>
+<li>Led 25+ people through the design and build of the team's first electric race car in 18 months.</li>
+<li>Extracted Pacejka 5.2 coefficients from tire data to set suspension geometry (camber, caster, toe).</li>
+<li>Modelled a Li-ion and supercapacitor hybrid accumulator in Simulink to find the best energy split.</li>
+<li>Designed a compact dual-motor rear-drive powertrain with a common shaft and single controller, 300 N-m at the wheels.</li></ul></div></div>
+</div><div id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="sk"><h3>DESIGN &amp; SIMULATION</h3><div class="chips"><span>Siemens NX</span><span>SOLIDWORKS</span><span>CATIA</span><span>Ansys</span><span>LS-Dyna</span><span>FreeFEM++</span><span>OpenFOAM</span><span>Ansys Fluent</span><span>Topology optimization</span><span>Load path tracing</span><span>MATLAB</span><span>Simulink</span><span>ADAMS</span></div></div>
+<div class="sk"><h3>VEHICLE DYNAMICS &amp; POWERTRAIN</h3><div class="chips"><span>Pacejka 5.2</span><span>Slip ratio / angle</span><span>Longitudinal, lateral, vertical dynamics</span><span>Vehicle geometry</span><span>PI Toolbox telemetry</span><span>Lap time simulation</span><span>Gear ratio optimization</span><span>Powertrain sizing</span><span>Hybrid energy storage</span><span>High-voltage systems</span></div></div>
+<div class="sk"><h3>PRODUCT DEVELOPMENT</h3><div class="chips"><span>APQP</span><span>DFMEA / PFMEA</span><span>DFM / DFA</span><span>DVP&amp;R</span><span>Requirements scoping</span><span>BOM</span><span>PLM</span></div></div>
+<div class="sk"><h3>PROGRAMMING &amp; ML</h3><div class="chips"><span>Python</span><span>C/C++</span><span>Java</span><span>Arduino</span><span>PyTorch</span><span>TensorFlow</span><span>Physics-informed neural networks</span></div></div>
+</div>
+</div><div id="education">
+<h2>Education &amp; recognition</h2>
+<div class="two">
+<ul><li><b>B.Tech, Mechanical Engineering</b><small>IIT (ISM) Dhanbad, Dec 2020 - May 2024, GPA 8.64</small></li>
+<li><b>MATLAB</b><small>Vanderbilt University</small></li><li><b>Introduction to Self-Driving Cars</b><small>University of Toronto</small></li><li><b>Industrial Robotics and Automation</b><small>TexMin, IIT (ISM) Dhanbad</small></li><li><b>Machine Learning</b><small>Stanford University</small></li></ul>
+<ul><li><b>UV Spark Award, Top Performer (2025)</b><small>Ultraviolette Automotive</small></li>
+<li><b>Team Captain, Formula Student Electric (Pi EV 2022)</b><small>Mechismu Racing, IIT (ISM) Dhanbad</small></li>
+<li><b>Journal Reviewer</b><small>Renewable &amp; Sustainable Energy Reviews, Elsevier</small></li>
+<li><b>Top Automotive Engineering Voice (2024)</b><small>LinkedIn</small></li></ul>
+</div>
+</div>
+<div id="contact"><h2>Contact</h2><p class="ct"><a href="mailto:herambhd03@gmail.com">herambhd03@gmail.com</a> &nbsp; <a href="https://www.linkedin.com/in/herambhd/">LinkedIn</a> &nbsp; <a href="https://github.com/herambh03">GitHub</a></p></div>
+</section>
+
+<div id="intro"><div class="box"><h1>HD <sup>&copy;</sup> 26&rsquo;</h1><p>Drive down the road to see my work.</p>
+<div class="kc"><i>W</i><i>A</i><i>S</i><i>D</i></div><p class="sm">or use the on-screen buttons</p><button id="go">START</button><a href="#" id="skip">skip to the plain site</a></div></div>
+<script type="module" src="main.js"></script>
+</body></html>
